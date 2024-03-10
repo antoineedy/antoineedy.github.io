@@ -61,7 +61,9 @@
 
       <div class="sidebar-info_more">
 
-        <div class="separator"></div>
+      <div class="separator"></div>
+
+        <!---
 
         <ul class="contacts-list">
 
@@ -96,6 +98,7 @@
         </ul>
 
         <div class="separator"></div>
+        --->
 
         <ul class="social-list">
 
@@ -106,9 +109,16 @@
           </li>
 
           <li class="social-item">
+            <a href="mailto:antoineedy@outlook.fr" class="social-link">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
             <a href="https://github.com/antoineedy" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
+          </li>
 
         </ul>
 
@@ -146,10 +156,6 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
         </ul>
 
       </nav>
@@ -170,12 +176,8 @@
 
         <section class="about-text">
           <p>
-            I'm a data-scientist and AI engineer. 
-          </p>
-
-          <p>
-            I am passionate about data and AI. I have a strong background in data analysis and machine learning.
-            I am also a good communicator and a team player. I am always eager to learn new technologies and methodologies.
+            After studying at École Centrale de Lyon, France, I went to the University of Surrey, UK, to specialize in deep-learning, computer vision & NLP!
+            On this website, you will find my resume and of my projects.
           </p>
         </section>
 
@@ -186,22 +188,22 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I do</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-dl.png
+                " alt="dl icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Deep-learning</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Training of complexe neural networks for various tasks.
                 </p>
               </div>
 
@@ -210,14 +212,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-cv.png" alt="cv icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Computer vision</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Development of models for object detection, image classification.
                 </p>
               </div>
 
@@ -226,14 +228,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-nlp.png" alt="nlp icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">NLP</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Text analysis and classification, chatbot developpement.
                 </p>
               </div>
 
@@ -242,14 +244,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-llm.png" alt="llm icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Foundation models</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Development of oundation models and more specifically LLMs.
                 </p>
               </div>
 
@@ -325,8 +327,7 @@
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
-
-        <embed src="assets/pdfs/EDY_CV_French.pdf" width="800px" height="1180px" />
+        <embed src="assets/pdfs/EDY_CV_French.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="1170px" />
 
       </article>
 
@@ -358,7 +359,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Graphic Design</button>
+              <button data-filter-btn>Developpement</button>
             </li>
 
           </ul>
@@ -390,7 +391,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Graphic Design</button>
+                <button data-select-item>Developpement</button>
               </li>
 
             </ul>
@@ -398,6 +399,78 @@
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="data-science">
+              <a href="https://github.com/AI-vidence/antakia" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-aividence.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"><b>AntakIA</b> - logiciel d'explicabilité régionale des IA chez AI-vidence</h3>
+
+                <p class="project-category">Data-science - <i>Stage d'application</i></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="artificial intelligence">
+              <a href="assets/pdfs/rapport_st.pdf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-st.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"><b>ST Microelectronics</b> - logiciel d'explicabilité régionale des IA chez AI-vidence</h3>
+
+                <p class="project-category">Intelligence Artificielle - <i>Projet d'application industriel de l'ECL</i></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://github.com/antoineedy/istacky" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-istacky.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"><b>IStacky</b> - interface graphique d'édition d'image dans un notebook</h3>
+
+                <p class="project-category">Developpement - <i>Projet personnel</i></p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data-science">
+              <a href="assets/pdfs/rapport-rapdigger.pdf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-rapdigger.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"><b>Rap Digger</b> - Algorithme de recommandation musiclae spécialisée dans le rap français</h3>
+
+                <p class="project-category">Data-science -<i>TIPE Concours Grandes Écoles</i></p>
+
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="data-science">
               <a href="assets/pdfs/rapport-parking.pdf" target="_blank">
@@ -410,45 +483,9 @@
                   <img src="./assets/images/project-parking.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Application Web dediée à la recherche des places de stationnement</h3>
+                <h3 class="project-title"><b>Trouve Ta Place</b> - application web de recherche des places de stationnement en temps réel</h3>
 
-                <p class="project-category">Data-science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="artificial intelligence">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-aividence.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="graphic design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-istacky.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
+                <p class="project-category">Data-science - <i>Projet d'Étude 1ère année Centrale Lyon</i></p>
 
               </a>
             </li>
