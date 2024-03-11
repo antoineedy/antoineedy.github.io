@@ -714,13 +714,6 @@ main {
   margin-bottom: 10px;
 }
 
-.modal-content p {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
 
 /**
  * #clients 
@@ -1222,10 +1215,54 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  color: black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background: hsla(257, 100%, 87%, 0.95);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  box-shadow: var(--shadow-5);
+  transition: var(--transition-1);
+  width: 30%; /* Could be more or less, depending on screen size */
+  color: black;
+}
+
+/* The Close Button */
+
+#close {
+  color: #45386885;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /*-----------------------------------*\
   #RESPONSIVE
-\*-----------------------------------*/
+\*-------rgb(0, 0, 0)------------------------*/
 
 /**
  * responsive larger than 450px screen

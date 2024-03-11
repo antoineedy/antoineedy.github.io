@@ -157,3 +157,45 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Get the modal
+var modal = document.getElementById("myModal-aividence");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn-aividence");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-aividence")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal_cw_fml = document.getElementById("myModal-cw-fml");
+// Get the button that opens the modal
+var btn_cw_fml = document.getElementById("myBtn-cw-fml");
+// Get the <span> element that closes the modal
+var span_cw_fml = document.getElementsByClassName("close-cw-fml")[0];
+// When the user clicks on the button, open the modal
+btn_cw_fml.onclick = function() {
+  modal_cw_fml.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_cw_fml.onclick = function() {
+  modal_cw_fml.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_cw_fml) {
+    modal_cw_fml.style.display = "none";
+  }
+}
