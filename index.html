@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -142,21 +145,46 @@
         <!-- Modal content -->
         <div class="modal-content">
         <span class="close-aividence" id="close">&times;</span>
-        <p>AI-vidence !</p>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="https://github.com/ai-vidence/antakia" target="_blank"><i class="fa fa-github"></i> GitHub page of AntakIA</a>
+        <a class="btn-modal" href="#" target="_blank"><i class="fa fa-book"></i> Report for Centrale Lyon</a>
         </div>
 
-        </div>
+      </div>
 
-      <!-- The Modals -->
       <div id="myModal-cw-fml" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
         <span class="close-cw-fml" id="close">&times;</span>
-        <p>Coursework FML</p>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="assets/pdfs/rapport-fml.pdf" target="_blank"><i class="fa fa-book"></i> Report for the University of Surrey</a>
         </div>
 
+      </div>
+
+      <div id="myModal-st" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close-st" id="close">&times;</span>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="assets/pdfs/rapport-fml.pdf" target="_blank"><i class="fa fa-book"></i> Report for Centrale Lyon</a>
         </div>
+
+      </div>
+
+      <div id="myModal-istacky" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close-istacky" id="close">&times;</span>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="https://github.com/antoineedy/istacky" target="_blank"><i class="fa fa-github"></i> GitHub page of IStacky</a>
+        <a class="btn-modal" href="https://antoineedy.github.io/istacky/" target="_blank"><i class="fa fa-book"></i> Documentation of the library</a>
+        </div>
+
+      </div>
 
       <!--
         - #NAVBAR
@@ -394,7 +422,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="data-science">
-              <a id="myBtn-aividence" href="#">
+              <a id="myBtn-aividence">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -412,7 +440,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="artificial intelligence">
-              <a id = "myBtn-cw-fml" href="#">
+              <a id = "myBtn-cw-fml">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -430,8 +458,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="artificial intelligence">
-              <a href="assets/pdfs/rapport_st.pdf" target="_blank">
-
+              <a id = "myBtn-st">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -448,7 +475,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="developpement">
-              <a href="https://github.com/antoineedy/istacky" target="_blank">
+              <a id="myBtn-istacky">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">

@@ -172,12 +172,6 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 // Get the modal
 var modal_cw_fml = document.getElementById("myModal-cw-fml");
@@ -193,9 +187,59 @@ btn_cw_fml.onclick = function() {
 span_cw_fml.onclick = function() {
   modal_cw_fml.style.display = "none";
 }
+
+// Get the modal
+var modal_st = document.getElementById("myModal-st");
+// Get the button that opens the modal
+var btn_st = document.getElementById("myBtn-st");
+// Get the <span> element that closes the modal
+var span_st = document.getElementsByClassName("close-st")[0];
+// When the user clicks on the button, open the modal
+btn_st.onclick = function() {
+  modal_st.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_st.onclick = function() {
+  modal_st.style.display = "none";
+}
+
+// Get the modal
+var modal_istacky = document.getElementById("myModal-istacky");
+// Get the button that opens the modal
+var btn_istacky = document.getElementById("myBtn-istacky");
+// Get the <span> element that closes the modal
+var span_istacky = document.getElementsByClassName("close-istacky")[0];
+// When the user clicks on the button, open the modal
+btn_istacky.onclick = function() {
+  modal_istacky.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_istacky.onclick = function() {
+  modal_istacky.style.display = "none";
+}
+
+
+
+
+
+
+
+
+// Close the modal when the user clicks somewhere
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  console.log(event.target);
   if (event.target == modal_cw_fml) {
     modal_cw_fml.style.display = "none";
+  }
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == modal_st) {
+    modal_st.style.display = "none";
+  }
+  if (event.target == modal_istacky) {
+    modal_istacky.style.display = "none";
   }
 }
