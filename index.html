@@ -186,6 +186,40 @@
 
       </div>
 
+      <div id="myModal-cw-cv" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close-cw-cv" id="close">&times;</span>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="assets/pdfs/rapport-cv.pdf" target="_blank"><i class="fa fa-book"></i> Report for the University of Surrey</a>
+        </div>
+
+      </div>
+
+      <div id="myModal-rapdigger" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close-rapdigger" id="close">&times;</span>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="assets/pdfs/rapport-rapdigger.pdf" target="_blank"><i class="fa fa-book"></i> Slides for the Concours au Grandes Écoles</a>
+        <a class="btn-modal" href="assets/pdfs/code-rapdigger.pdf" target="_blank"><i class="fa fa-file-code-o"></i> Structure and pHp code of the project</a>
+      </div>
+
+      </div>
+
+      <div id="myModal-ttp" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close-ttp" id="close">&times;</span>
+        <p class="text-modal">Open in a new tab:</p>
+        <a class="btn-modal" href="assets/pdfs/rapport-parking.pdf" target="_blank"><i class="fa fa-book"></i> Report for Centrale Lyon</a>
+      </div>
+
+      </div>
+
       <!--
         - #NAVBAR
       -->
@@ -348,7 +382,10 @@
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
-        <embed src="assets/pdfs/EDY_CV_French.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="1170px" />
+    
+        <div width="100%" height = "1000px">
+        <iframe src="https://drive.google.com/file/d/1CPb6jES7RL6_-EDHRmlQ7D3h-5I5p5yh/preview" width="100%" height="1000px" allow="autoplay"></iframe>
+        </div> 
 
       </article>
 
@@ -493,7 +530,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="artificial intelligence">
-              <a class="open-new" href="assets/pdfs/rapport-cv.pdf" target="_blank">
+              <a id="myBtn-cw-cv">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -511,7 +548,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="data-science">
-              <a href="assets/pdfs/rapport-rapdigger.pdf" target="_blank">
+              <a id="myBtn-rapdigger">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -529,7 +566,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="data-science">
-              <a class="open-new" href="assets/pdfs/rapport-parking.pdf" target="_blank">
+              <a id="myBtn-ttp">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>

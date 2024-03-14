@@ -218,6 +218,51 @@ span_istacky.onclick = function() {
   modal_istacky.style.display = "none";
 }
 
+// Get the modal
+var modal_cw_cv = document.getElementById("myModal-cw-cv");
+// Get the button that opens the modal
+var btn_cw_cv = document.getElementById("myBtn-cw-cv");
+// Get the <span> element that closes the modal
+var span_cw_cv = document.getElementsByClassName("close-cw-cv")[0];
+// When the user clicks on the button, open the modal
+btn_cw_cv.onclick = function() {
+  modal_cw_cv.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_cw_cv.onclick = function() {
+  modal_cw_cv.style.display = "none";
+}
+
+// Get the modal
+var modal_rapdigger = document.getElementById("myModal-rapdigger");
+// Get the button that opens the modal
+var btn_rapdigger = document.getElementById("myBtn-rapdigger");
+// Get the <span> element that closes the modal
+var span_rapdigger = document.getElementsByClassName("close-rapdigger")[0];
+// When the user clicks on the button, open the modal
+btn_rapdigger.onclick = function() {
+  modal_rapdigger.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_rapdigger.onclick = function() {
+  modal_rapdigger.style.display = "none";
+}
+
+// Get the modal
+var modal_ttp = document.getElementById("myModal-ttp");
+// Get the button that opens the modal
+var btn_ttp = document.getElementById("myBtn-ttp");
+// Get the <span> element that closes the modal
+var span_ttp = document.getElementsByClassName("close-ttp")[0];
+// When the user clicks on the button, open the modal
+btn_ttp.onclick = function() {
+  modal_ttp.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span_ttp.onclick = function() {
+  modal_ttp.style.display = "none";
+}
+
 
 
 
@@ -241,5 +286,14 @@ window.onclick = function(event) {
   }
   if (event.target == modal_istacky) {
     modal_istacky.style.display = "none";
+  }
+  if (event.target == modal_cw_cv) {
+    modal_cw_cv.style.display = "none";
+  }
+  if (event.target == modal_rapdigger) {
+    modal_rapdigger.style.display = "none";
+  }
+  if (event.target == modal_ttp) {
+    modal_ttp.style.display = "none";
   }
 }
