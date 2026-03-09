@@ -23,7 +23,7 @@ repository               : "antoineedy/antoineedy.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "EDY-PP.png"
+  avatar           : "EDY-PP.jpg"
   name             : "Antoine EDY"
   pronouns         : "he/him/his" # example: "she/her"  
   bio              : "NLP Researcher"
