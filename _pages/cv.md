@@ -11,54 +11,55 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Master of Science in Artificial Intelligence** — University of Surrey, Guildford, UK (2023–2024)
+  * Deep Learning, Computer Vision, NLP, Machine Learning
+  * Awarded International Excellence Scholarship for Master's programs
+  * Thesis: *Zero-shot and Few-shot Adaptation of Multimodal Foundation Models*, supervised by Dr Muhammad Awais Rana
 
-Work experience
+* **General Engineering Program (Diplôme d'Ingénieur)** — École Centrale de Lyon, Lyon, France (2021–2024)
+  * Specializations: AI, Machine Learning, Probability, Chaos and Fractals
+  * Project Leader for AI project with STMicroelectronics — neural network for image classification
+  * Project Leader for 1st-year web project — geolocation application for delivery drivers
+
+* **Preparatory Classes for Engineering Schools (MPSI-MP)** — Collège Stanislas Paris VI, Paris, France (2019–2021)
+  * Mathematics, Physics, Computer Science, Chemistry, Engineering Sciences
+  * TIPE: Music recommendation algorithm
+
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Senior Data Scientist** — Illuin Technology, Paris, France (September 2025 – Present)
+  * Development of artificial intelligence solutions for industrial clients
+  * NLP research (visual embeddings for industrial contexts)
+  * Speech processing research (model evaluation, speech-to-text model finetuning)
+  * Software development of cutting-edge AI solutions
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Data Scientist & Python Developer Intern** — AI-vidence, Palaiseau, France (2023)
+  * Development of a Python library for ML/AI model explainability
+  * Documentation writing, creation of explanatory videos and designs
+  * Participation in SpringTech Paris-Saclay 2023 at HEC
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **AI Frameworks:** PyTorch, Hugging Face (Transformers, PEFT), NVIDIA NeMo, OpenMMLab, Scikit-learn
+* **AI Tooling:** Pandas, OpenCV, skimage, Seaborn, Jupyter, Ipyvuetify, Voilà
+* **AI Explainability:** SHAP, Lime, LENS, Xplique
+* **Matlab:** Computer Vision, Simulink, Signal Processing, Embedded Systems
+* **Web Development:** HTML, CSS, PHP, TypeScript
+* **Digital Design:** Adobe Photoshop, Illustrator, InDesign, Premiere Pro
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Languages
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* French — Native
+* English — Fluent (C1 — TOEFL ITP 623/677, Cambridge C1 191/210)
+* Spanish — Intermediate (B1)
+
+Achievements
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 3rd place in the French National Geoscience Olympiad (2019)
+* Language Certifications: Cambridge C1 (191/210), TOEFL ITP (623/677), Duolingo English Test (135/160)

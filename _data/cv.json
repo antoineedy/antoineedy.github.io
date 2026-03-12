@@ -1,152 +1,228 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Antoine EDY",
+    "email": "antoineedy@outlook.fr",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://antoineedy.github.io",
+    "summary": "AI Researcher at Illuin Technology (Paris). MSc in Artificial Intelligence from the University of Surrey. Research interests include multimodal AI, NLP, retrieval-augmented generation, and speech processing.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Paris",
+      "countryCode": "FR",
+      "region": "Île-de-France"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "Antoine EDY",
+        "url": "https://scholar.google.com/citations?user=6cS484AAAAAJ&hl=fr"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0009-0005-6307-1222",
+        "url": "https://orcid.org/0009-0005-6307-1222"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "antoineedy",
+        "url": "https://github.com/antoineedy"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Illuin Technology",
+      "position": "Experienced Data Scientist",
+      "website": "https://www.illuin.tech/",
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "summary": "Development of artificial intelligence solutions for industrial clients.",
+      "highlights": [
+        "NLP research (visual embeddings for industrial contexts)",
+        "Speech processing research (model evaluation, speech-to-text model finetuning)",
+        "Software development of cutting-edge AI solutions"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "AI-vidence",
+      "position": "Data Scientist & Python Developer Intern",
+      "website": "",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31",
+      "summary": "Research and development internship in AI explainability.",
+      "highlights": [
+        "Development of a Python library for ML/AI model explainability",
+        "Documentation writing, creation of explanatory videos and designs",
+        "Participation in SpringTech Paris-Saclay 2023 at HEC"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "University of Surrey",
+      "area": "Artificial Intelligence",
+      "studyType": "Master of Science",
+      "startDate": "2023",
+      "endDate": "2024",
+      "gpa": null,
+      "courses": [
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Machine Learning"
+      ]
+    },
+    {
+      "institution": "Ecole Centrale de Lyon",
+      "area": "General Engineering",
+      "studyType": "Engineering Degree (Diplome d'Ingenieur)",
+      "startDate": "2021",
+      "endDate": "2024",
+      "gpa": null,
+      "courses": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Probability and Statistics",
+        "Chaos and Fractals"
+      ]
+    },
+    {
+      "institution": "College Stanislas Paris VI",
+      "area": "Mathematics, Physics, Computer Science (MPSI-MP)",
+      "studyType": "Preparatory Classes for Engineering Schools",
+      "startDate": "2019",
+      "endDate": "2021",
+      "gpa": null,
+      "courses": [
+        "Mathematics",
+        "Physics",
+        "Computer Science",
+        "Chemistry",
+        "Engineering Sciences"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI Frameworks",
+      "level": "",
+      "keywords": [
+        "PyTorch",
+        "Hugging Face Transformers",
+        "PEFT",
+        "NVIDIA NeMo",
+        "OpenMMLab",
+        "Scikit-learn"
+      ]
+    },
+    {
+      "name": "AI Tooling",
+      "level": "",
+      "keywords": [
+        "Pandas",
+        "OpenCV",
+        "skimage",
+        "Seaborn",
+        "Jupyter",
+        "Ipyvuetify",
+        "Voila"
+      ]
+    },
+    {
+      "name": "AI Explainability",
+      "level": "",
+      "keywords": [
+        "SHAP",
+        "Lime",
+        "LENS",
+        "Xplique"
+      ]
+    },
+    {
+      "name": "Matlab",
+      "level": "",
+      "keywords": [
+        "Computer Vision",
+        "Simulink",
+        "Signal Processing",
+        "Embedded Systems"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Digital Design",
+      "level": "",
+      "keywords": [
+        "Adobe Photoshop",
+        "Illustrator",
+        "InDesign",
+        "Premiere Pro"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent (C1 — TOEFL ITP 623/677)"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate (B1)"
+    }
+  ],
+  "interests": [
+    {
+      "name": "AI Explainability"
+    },
+    {
+      "name": "Computer Vision and Sports"
+    },
+    {
+      "name": "Multimodal AI"
+    },
+    {
+      "name": "Causality"
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "ViDoRe V3: A Comprehensive Evaluation of Retrieval Augmented Generation in Complex Real-World Scenarios",
+      "publisher": "arXiv preprint (arXiv:2601.08620)",
+      "releaseDate": "2026",
+      "website": "https://arxiv.org/abs/2601.08620",
+      "summary": "A comprehensive multimodal RAG benchmark featuring multi-type queries over visually rich document corpora. Covers 10 datasets across diverse professional domains, comprising ~26,000 document pages paired with 3,099 human-verified queries in 6 languages."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models",
+      "publisher": "First Late Interaction Workshop (LIR) @ ECIR 2026",
+      "releaseDate": "2026",
+      "website": "https://openreview.net/forum?id=85a1LK7Unu",
+      "summary": "An analysis of targeted behaviors of late interaction models, presented at the First Late Interaction Workshop (LIR) at ECIR 2026."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Exploring Zero-Shot Capabilities of Multi-Modal Foundation Models for Semantic Image Segmentation",
+      "publisher": "Master's Thesis, University of Surrey",
+      "releaseDate": "2024",
+      "website": "https://www.researchgate.net/publication/384687820_Exploring_Zero-Shot_Capabilities_of_Multi-Modal_Foundation_Models_for_Semantic_Image_Segmentation?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHJvZmlsZSJ9fQ",
+      "summary": "An exploration of zero-shot capabilities of multi-modal foundation models applied to semantic image segmentation tasks."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
