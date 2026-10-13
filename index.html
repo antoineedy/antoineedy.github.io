@@ -1,17 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antoine Edy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; }
-        body { display: flex; flex-direction: column; }
-        embed { flex: 1; width: 100%; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antoine Edy</title>
+  <meta name="description" content="Antoine Edy, AI Research Scientist at Illuin Technology (Paris). Agent memory, multimodal retrieval, RAG evaluation.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <link rel="preload" href="fonts/lmroman10-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <embed src="main.pdf" type="application/pdf" width="100%" height="100%">
+
+<div class="layout">
+
+  <!-- ---------- Sidebar navigation ---------- -->
+  <aside class="sidebar">
+    <div class="sidebar-tools">
+      <button class="tool" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fa-solid fa-moon icon-moon"></i><i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+    </div>
+    <a class="brand smallcaps" href="#top">Antoine Edy</a>
+    <div class="cv-download">
+      <a href="main.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i><span class="label">CV (PDF)</span></a>
+    </div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#talks">Talks &amp; Blog Posts</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+    </nav>
+  </aside>
+
+  <main class="content" id="top">
+
+    <!-- ---------- Hero ---------- -->
+    <header class="hero">
+      <img src="images/EDY-pp-small.png" alt="Antoine Edy">
+      <div>
+        <h1>Antoine Edy</h1>
+        <p class="title">AI Research Scientist</p>
+        <div class="links">
+          <a href="mailto:antoineedy@outlook.fr"><i class="fa-solid fa-envelope"></i>Email</a>
+          <a href="https://scholar.google.com/citations?user=6cS484AAAAAJ" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i>Scholar</a>
+          <a href="https://github.com/antoineedy" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
+          <a href="https://huggingface.co/antoineedy" target="_blank" rel="noopener"><span class="hf">🤗</span>Hugging Face</a>
+          <a href="https://www.linkedin.com/in/antoine-edy/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href="https://x.com/antoine_edy" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i>X</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ---------- Publications ---------- -->
+    <section id="publications">
+      <h2>Publications <span class="note"><span class="star">⋆</span> denotes equal contribution</span></h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">DAEDALUS: Bootstrapping Agent Memory from Self-Generated Tasks</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://arxiv.org/abs/2610.08048" target="_blank" rel="noopener"><i class="ai ai-arxiv"></i>arXiv:2610.08048</a>
+          <a href="https://github.com/illuin-tech/daedalus" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>Code</a>
+          <a href="https://illuin-tech.github.io/daedalus/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i>Blog post</a>
+          <a href="https://huggingface.co/datasets/illuin/daedalus-traces" target="_blank" rel="noopener"><span class="hf">🤗</span>Traces</a>
+        </div>
+        <p class="meta"><span class="me">A. Edy<span class="star">⋆</span></span>, M. Conti<span class="star">⋆</span>, V. Xing<span class="star">⋆</span>, M-A. Allard, N. Benhamdane, G. Viaud</p>
+        <p class="venue"><strong>Preprint</strong>, 2026</p>
+        <p class="desc">Self-improving agents that build their own memory by practicing on self-generated tasks, without training tasks or oracle verifiers. On AppWorld, <em>τ</em><sup>2</sup>-bench and AutomationBench, strongest method without training tasks and competitive with those that use them; memory banks transfer across model families.</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">ViDoRe V3: A Comprehensive Evaluation of RAG in Complex Real-World Scenarios</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://arxiv.org/abs/2601.08620" target="_blank" rel="noopener"><i class="ai ai-arxiv"></i>arXiv:2601.08620</a>
+          <a href="https://huggingface.co/collections/vidore/vidore-benchmark-v3" target="_blank" rel="noopener"><span class="hf">🤗</span>Datasets</a>
+          <a href="https://huggingface.co/blog/antoineedy/vidore-v3-pipeline-framework-and-leaderboard" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i>Blog post</a>
+        </div>
+        <p class="meta">A. Loison<span class="star">⋆</span>, Q. Macé<span class="star">⋆</span>, <span class="me">A. Edy<span class="star">⋆</span></span>, V. Xing, T. Balough, G. Moreira, B. Liu, M. Faysse et al.</p>
+        <p class="venue"><strong>ACL 2026 Main Conference</strong>, Oral Presentation</p>
+        <p class="desc">Multimodal RAG benchmark: 26,000 pages, 18,594 queries across 10 domains in 6 languages, 12,000h of human annotation. Work made in collaboration with NVIDIA; ∼500k dataset downloads/year on Hugging Face.</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Analyzing Targeted Behaviors of Late Interaction Models</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://arxiv.org/abs/2603.26259" target="_blank" rel="noopener"><i class="ai ai-arxiv"></i>arXiv:2603.26259</a>
+        </div>
+        <p class="meta"><span class="me">A. Edy<span class="star">⋆</span></span>, M. Conti<span class="star">⋆</span>, Q. Macé<span class="star">⋆</span></p>
+        <p class="venue"><strong>ECIR 2026</strong> Late Interaction Workshop, Poster</p>
+        <p class="desc">Analysis of length bias in multi-vector scoring and MaxSim similarity distribution on NanoBEIR benchmark.</p>
+      </article>
+    </section>
+
+    <!-- ---------- Experience ---------- -->
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">Illuin Technology</span> — <span class="entry-sub">AI Research Scientist</span></span>
+          <span class="date">Sep 2024 – Present</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://arxiv.org/abs/2610.08048" target="_blank" rel="noopener" title="DAEDALUS"><i class="ai ai-arxiv"></i>arXiv:2610.08048</a>
+          <a href="https://arxiv.org/abs/2601.08620" target="_blank" rel="noopener" title="ViDoRe V3"><i class="ai ai-arxiv"></i>arXiv:2601.08620</a>
+          <a href="https://arxiv.org/abs/2603.26259" target="_blank" rel="noopener" title="Late Interaction Models"><i class="ai ai-arxiv"></i>arXiv:2603.26259</a>
+        </div>
+        <ul class="items">
+          <li>First author of DAEDALUS: designed a self-improving agent that builds its own memory from self-generated practice tasks for in-context learning on long-horizon tool-use tasks</li>
+          <li>Co-led the creation of ViDoRe V3, establishing the gold standard benchmark for multimodal document retrieval evaluation; contributor to the MTEB ecosystem</li>
+          <li>Conducted research on Multimodal Retrieval and late interaction dynamics (ColBERT/ColPali-like models)</li>
+          <li>Fine-tuned LLMs for tool calling in agentic RAG contexts; fine-tuned speech-to-text models (Whisper, NVIDIA Parakeet) for domain-specific industrial applications</li>
+          <li>Conducted 50+ technical interviews as part of the hiring process for Data Scientist positions</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">Centre for Vision, Speech and Signal Processing (University of Surrey)</span> — <span class="entry-sub">Research Intern</span></span>
+          <span class="date">2024</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://www.researchgate.net/publication/384687820" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i>Master's thesis</a>
+        </div>
+        <ul class="items">
+          <li>Studied zero-shot semantic segmentation using multimodal foundation models; improved ZegCLIP baseline with multi-scaling techniques and inner encoder layers</li>
+          <li>Research led to Master's thesis: <em>Exploring Zero-Shot Capabilities of Multimodal Foundation Models for Semantic Segmentation</em>, supervised by Prof. Muhammad Awais Rana and Dr. Srinivasa Rao Nandam</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">AI-vidence</span> — <span class="entry-sub">ML Research Intern</span></span>
+          <span class="date">2023</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://www.ai-vidence.com/xplique-la-librairie-python-pour-expliquer-le-vision-par-ordinateur/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i>Blog post</a>
+        </div>
+        <ul class="items">
+          <li>Developed a Python library for tabular model explainability and cluster analysis</li>
+          <li>Presented at SpringTech Paris-Saclay 2023 at HEC Paris</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ---------- Education ---------- -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">University of Surrey</span> — <span class="entry-sub">Master of Science in Artificial Intelligence</span></span>
+          <span class="date">2023 – 2024</span>
+        </div>
+        <ul class="items">
+          <li>International Excellence Scholarship recipient. Graduated with Highest Honors</li>
+          <li>NLP, CV, Audio Processing, Symbolic Knowledge Representation and Logical Reasoning, People-Centered AI</li>
+          <li>Master's Thesis: <em>Zero-shot and Few-shot Adaptation of Multimodal Foundation Models</em></li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">École Centrale de Lyon</span> — <span class="entry-sub">General Engineering Program (Grande École)</span></span>
+          <span class="date">2021 – 2024</span>
+        </div>
+        <ul class="items">
+          <li>Specializations: Mathematics, Machine Learning, Probability Theory, Chaos and Fractals</li>
+          <li>Project Leader: Unsupervised MCU Classification with Deep Learning for STMicroelectronics</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span><span class="entry-title">Collège Stanislas Paris VI</span> — <span class="entry-sub">Classe Préparatoire, MPSI-MP</span></span>
+          <span class="date">2019 – 2021</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ---------- Talks & Blog Posts ---------- -->
+    <section id="talks">
+      <h2>Talks &amp; Blog Posts</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Multimodal Retrieval and ViDoRe V3</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://datacraft.paris/event/neurons-peppers-3/" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i>Event page</a>
+        </div>
+        <p class="meta">Invited talk, Neurons &amp; Peppers (Datacraft, Paris), 2026</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Agentic Search Framework for ViDoRe V3</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://huggingface.co/blog/antoineedy/vidore-v3-pipeline-framework-and-leaderboard" target="_blank" rel="noopener"><span class="hf">🤗</span>Blog post</a>
+        </div>
+        <p class="meta">Hugging Face blog, 2026</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Xplique: analysing different scales of interpretability</span>
+        </div>
+        <div class="entry-links">
+          <a href="https://www.ai-vidence.com/xplique-la-librairie-python-pour-expliquer-le-vision-par-ordinateur/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i>Blog post</a>
+        </div>
+        <p class="meta">AI-vidence blog, 2023</p>
+      </article>
+    </section>
+
+    <!-- ---------- Skills ---------- -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <dl class="skills">
+        <dt>ML Frameworks</dt>
+        <dd>PyTorch, Hugging Face (Transformers, PEFT, Accelerate), W&amp;B, NVIDIA NeMo, OpenMMLab</dd>
+        <dt>Information Retrieval</dt>
+        <dd>SentenceTransformer, pylate, colpali-engine, MTEB, FAISS, (Fast)PLAID, ElasticSearch</dd>
+        <dt>Infra. and Ops.</dt>
+        <dd>Kubernetes, Docker, vLLM, SLURM, HTCondor, skypilot, GCP</dd>
+        <dt>Languages</dt>
+        <dd>French (Native), English (C1, TOEFL 623/677), Spanish (B1)</dd>
+      </dl>
+    </section>
+
+    <!-- ---------- Hobbies ---------- -->
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul class="items hobbies">
+        <li>Competitive tennis, football, and any sport going (any day, any time)</li>
+        <li>Chess, where my tactics and my blunders are evenly matched</li>
+        <li>Cinema, literature, hip-hop music</li>
+        <li>Digital graphic design and art culture</li>
+      </ul>
+    </section>
+
+    <footer>Antoine Edy · Paris, France · Last updated October 2026</footer>
+  </main>
+</div>
+
+<script>
+  // Dark mode toggle
+  document.getElementById("theme-toggle").addEventListener("click", function () {
+    var root = document.documentElement;
+    var current = root.getAttribute("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = current === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  // Highlight the section currently in view
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute("href")); });
+  var lastActive = null;
+  function updateActive() {
+    var offset = window.innerHeight * 0.3;
+    var current = -1;
+    sections.forEach(function (s, i) { if (s.getBoundingClientRect().top <= offset) current = i; });
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) current = sections.length - 1;
+    if (current === lastActive) return;
+    lastActive = current;
+    links.forEach(function (a, i) { a.classList.toggle("active", i === current); });
+    // On the mobile top bar, keep the active link visible
+    if (current >= 0 && window.innerWidth <= 960) {
+      var a = links[current];
+      a.parentNode.scrollTo({ left: current === 0 ? 0 : a.offsetLeft - a.parentNode.offsetLeft - 16, behavior: "smooth" });
+    }
+  }
+  window.addEventListener("scroll", updateActive, { passive: true });
+  window.addEventListener("resize", updateActive);
+  updateActive();
+</script>
 </body>
 </html>
